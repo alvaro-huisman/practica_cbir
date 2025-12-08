@@ -38,21 +38,22 @@ cbir/
 ```
 
 ## Instalación y ejecución (usuario final)
-1) Crear entorno y dependencias:
+1) Descargar las imágenes: baja la carpeta `dataset/` desde **[Google Drive](https://drive.google.com/drive/folders/1KLPWNsyXwuI1PJ55Nbxz8DWCcqx3BcZS?usp=drive_link)** y colócala en la raíz del proyecto, manteniendo `dataset/<clase>/train|test/*.jpg`.
+2) Crear entorno y dependencias:
 ```bash
 python -m venv .venv
 .venv\Scripts\activate        # Windows
 pip install -r requirements.txt
 ```
-2) Ejecutar la app:
+3) Ejecutar la app:
 ```bash
 streamlit run app.py
 ```
 No hace falta recalcular índices ni codebooks.
 
 ## Datasets e índices precomputados
-- Las imágenes están en Google Drive: **[Google Drive](https://drive.google.com/drive/folders/1KLPWNsyXwuI1PJ55Nbxz8DWCcqx3BcZS?usp=drive_link)**. Descarga la carpeta `dataset/` y colócala en la raíz.
-- Los índices/codebooks ya están en el repo (`faiss_indexes/`, `features/`); no es necesario recalcularlos.
+- Imágenes: solo están en Google Drive (**[Google Drive](https://drive.google.com/drive/folders/1KLPWNsyXwuI1PJ55Nbxz8DWCcqx3BcZS?usp=drive_link)**). Descarga `dataset/` y ponla en la raíz.
+- Índices/codebooks: ya versionados en `faiss_indexes/` y `features/` (no recalcular).
 - Código en GitHub: **[Repositorio](https://github.com/alvaro-huisman/practica_cbir)**.
 
 ## Métricas obtenidas (db_train → db_test, k = 1/5/10)
