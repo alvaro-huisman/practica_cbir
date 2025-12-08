@@ -1,4 +1,5 @@
-# CBIR Streamlit App
+# CBIR Streamlit App  
+Autores: Alvaro Huisman, Esteban Moreno Mendoza
 
 Buscador de imágenes por contenido con varios extractores (color, SIFT/ORB BoW, ResNet50, EfficientNet-B0) y FAISS. El repo incluye todo precomputado para ejecutar la app sin recalcular índices.
 
@@ -51,7 +52,9 @@ streamlit run app.py
 No hace falta recalcular índices ni codebooks.
 
 ## Datasets e índices precomputados
-- Descarga todo el paquete (imágenes + índices + codebooks) desde Google Drive: **[Google Drive](https://drive.google.com/drive/folders/1KLPWNsyXwuI1PJ55Nbxz8DWCcqx3BcZS?usp=drive_link)** y colócalo en la raíz respetando la estructura anterior.
+- Las imágenes están en Google Drive: **[Google Drive](https://drive.google.com/drive/folders/1KLPWNsyXwuI1PJ55Nbxz8DWCcqx3BcZS?usp=drive_link)**. Descarga la carpeta `dataset/` y colócala en la raíz.
+- Los índices/codebooks ya están en el repo (`faiss_indexes/`, `features/`); no es necesario recalcularlos.
+- Código en GitHub: **[Repositorio](https://github.com/alvaro-huisman/practica_cbir)**.
 
 ## Métricas obtenidas (db_train → db_test, k = 1/5/10)
 - Color histogram: mAP 0.4364 | hit@1 0.33 | hit@5 0.71 | hit@10 0.88
