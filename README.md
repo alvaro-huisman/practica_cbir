@@ -44,8 +44,7 @@ python -m venv .venv
 .venv\Scripts\activate        # Windows
 pip install -r requirements.txt
 ```
-2) Descomprimir/colocar las carpetas `dataset/`, `faiss_indexes/`, `features/` y `database/` en la raíz (se suministran).  
-3) Ejecutar la app:
+2) Ejecutar la app:
 ```bash
 streamlit run app.py
 ```
