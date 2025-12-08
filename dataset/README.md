@@ -1,0 +1,1 @@
+Coloca aquí la carpeta 'dataset' descargada desde Google Drive (https://drive.google.com/drive/folders/1KLPWNsyXwuI1PJ55Nbxz8DWCcqx3BcZS?usp=drive_link), manteniendo la estructura: dataset/<clase>/train|test/*.jpg.
