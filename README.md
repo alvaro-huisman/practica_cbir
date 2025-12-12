@@ -39,9 +39,10 @@ cbir/
 
 ## Instalación y ejecución (usuario final)
 1) Descargar las imágenes: baja la carpeta `dataset/` desde **[Google Drive](https://drive.google.com/drive/folders/1KLPWNsyXwuI1PJ55Nbxz8DWCcqx3BcZS?usp=drive_link)** y colócala en la raíz del proyecto, manteniendo `dataset/<clase>/train|test/*.jpg`.
-2) Una vez colocada bien las carpetas se procede a crear entorno anaconda y a instalar las dependencias:
+2) Una vez colocada bien las carpetas se procede a crear un entorno anaconda y a instalar las dependencias:
 ```bash
-conda create -n nuevo_entorno python=3.8.20
+conda create -n entorno python=3.10
+conda activate entorno
 pip install -r requirements.txt
 ```
 3) Ejecutar la app:
