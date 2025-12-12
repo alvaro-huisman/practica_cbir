@@ -47,6 +47,7 @@ pip install -r requirements.txt
 ```
 3) Ejecutar la app:
 ```bash
+pip install streamlit --upgrade
 streamlit run app.py
 ```
 No hace falta recalcular índices ni codebooks.
